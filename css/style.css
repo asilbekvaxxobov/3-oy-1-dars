@@ -12,6 +12,7 @@
     /* Fonts \ */
     --fl: 56px;
     --fm: 40px;
+    --fs: 32px;
 }
 *{
     margin: 0;
@@ -19,6 +20,7 @@
     box-sizing: border-box;
 }
 .button{
+    white-space: nowrap;
     display: inline-block;
     padding: 14px 45px;
     border-radius: 28px;
@@ -160,6 +162,79 @@ body{
     top: 24px;
     right: 24px;
 }
+
+/* My work */
+.work {
+    display: flex;
+    justify-content: center;
+    padding-top: 44px;
+    padding-bottom: 44px;
+    overflow-x: hidden;
+}
+.work-title {
+    text-align: center;
+    font-size: var(--fs);
+    color: var(--black);
+    margin-bottom: 56px;
+}
+.work-images {
+    width: 1440px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    overflow-x: scroll;
+    margin-bottom: 56px;
+}
+/* .work-images::-webkit-scrollbar {
+    display: none;
+  } */
+.work-image {
+    width: 540px;
+    height: 360px;
+    object-fit: cover;
+    object-position: center;
+}
+.work-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+.work-actions-btn {
+    width: 64px;
+    height: 64px;
+    background-color: var(--black);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.work-actions-btn:hover{
+    background-color: var(--blue);
+}
+/* Cta */
+.cta {
+    padding-top: 44px;
+    padding-bottom: 28px;
+}
+.cta-container {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: var(--black);
+    padding: 80px 95px 80px 65px;
+    border-radius: 10px;
+}
+.cta-title {
+    font-size: var(--fm);
+    max-width: 540px;
+    margin-bottom: 25px;
+}
+.cta-title{
+    color: var(--white);
+}
+.cta-text{
+    color: var(--white);
+}
+
 @media(max-width:900px){
     :root{
         --fm:32px;
